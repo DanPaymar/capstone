@@ -1,0 +1,55 @@
+
+
+.c-bg {
+    background-image: url('/assets/apples.jpg');
+    color: #fff;
+    background-size: cover;
+    min-height: 600px;
+}
+.c-bg-2 {
+    background-image: url('https://homegrown.extension.ncsu.edu/wp-content/uploads/2019/08/Shopping-at-your-local-farmers-market_Homegrown-web.jpg');
+    background-size: cover;
+    min-height: 700px;
+}
+.color-w {
+    color: #fff !important;
+}
+.module-1 {
+    color: #fff;
+    
+}
+.bg-c {
+    background-color: rgba(174, 126, 66, 0.125);
+}
+
+.overlay-wrapper {
+    position: relative;
+    z-index: 1; 
+}
+
+.overlay-wrapper::before {
+    content: "";
+    position: absolute;
+    border-radius: 32px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 55, 55, 0.35);
+    z-index: -1; 
+}
+
+.overlay-content {
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+}
+
+/* .fa-magnifying-glass {
+    color: #6c757d; 
+} */
+
+.custom-search {
+    font-size: 1.15rem;
+}

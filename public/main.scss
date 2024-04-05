@@ -1,0 +1,41 @@
+//
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bs-body-font-family: 'Roboto', sans-serif;
+}
+
+
+$custom-colors: (
+/* Color Theme Swatches in Hex */
+"theme-primary": #26C4A5,
+"theme-secondary": #54D99F,
+"theme-tertiary": #ACE08C,
+"theme-accent": #E8E284,
+"theme-accent-2": #F2B652
+);
+
+// /* Color Theme Swatches in RGBA */
+// $theme-primary: rgba(38,195,165, 1);
+// $theme-secondary: rgba(84,216,158, 1);
+// $theme-tertiary: rgba(172,223,140, 1);
+// $theme-accent: rgba(232,226,131, 1);
+// $theme-accent-2: rgba(242,182,82, 1);
+
+// /* Color Theme Swatches in HSLA */
+// $theme-primary: hsla(168, 67, 45, 1);
+// $theme-secondary: hsla(153, 63, 59, 1);
+// $theme-tertiary: hsla(97, 57, 71, 1);
+// $theme-accent: hsla(56, 68, 71, 1);
+// $theme-accent-2: hsla(37, 86, 63, 1);
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
