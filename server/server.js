@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Define a route
-app.get('/public/index.html', (req, res) => {
+app.get('../public/index.html', (req, res) => {
     res.send('');
 });
 
