@@ -12,7 +12,7 @@ app.use(cors());
 // Define a route to serve the website
 app.get('/', (req, res) => {
     // send the main HTML file of website
-    res.sendFile(`${__dirname}/public/index.html`);
+    res.sendFile(`${__dirname}/public`);
 });
 
 
