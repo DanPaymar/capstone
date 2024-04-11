@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JustRype</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css"><!-- update file path when deployed to make sure sass is compiled -->
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- copy and move this file to public folder when deploying site -->
+
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script type="text/javascript"
+        src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+    <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
+    <meta name="appleid-signin-scope" content="[SCOPES]">
+    <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
+    <meta name="appleid-signin-state" content="[STATE]">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="p-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="JustRype">
+                        <use xlink:href="#bootstrap" />
+                    </svg> -->
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
+                </ul>
+
+                <div class="text-end">
+                    <a href="login.html"><button class="btn btn-outline-theme-primary me-2">Login</button></a>
+                    <!-- <button type="button" class="btn btn-theme-primary">Sign up</button> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid bg-light flex-grow-1">
+        <div class="container col-xxl-12 col-lg-12 mt-5 px-4">
+            <div class="row justify-content-center">
+                <!-- Left Column -->
+                <div class="col-lg-3 col-md-3 shadow rounded-5 me-md-4 me-md-0 bg-body p-4">
+                    <div class="align-items-start">
+                        <img src="/assets/profile.jpg" alt="Profile Picture" class="profile-image">
+                        <button class="btn btn-theme-secondary-outline"><i class="fas fa-edit"></i>
+                            Edit</button>
+                    </div>
+                    <h3 class="mt-4 text-start">Daniel Paymar</h3>
+                    <p class="text-start">San Francisco, CA</p>
+                    <p class="text-start muted">Joined 2022</p>
+
+                </div>
+                <!-- Right Column -->
+                <div class="col-lg-7 col-md-7 px-5 rounded-5 bg-body mb-5 ms-md-4 ms-md-0">
+                    <ul class="nav mb-4 mt-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" aria-current="page" aria-label="table" href="#">My
+                                Table</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Favorites</a>
+                        </li>
+                    </ul>
+                    <div class="px-3">
+                        <h2 aria-labelledby="tableLabel">My Table</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat odio vitae
+                            mauris
+                            maximus, vel vestibulum enim facilisis. Mauris eu elit quis lorem aliquet aliquet vel sit
+                            amet
+                            orci.</p>
+                        <p>Nulla consectetur justo id mauris pharetra, nec tempor odio gravida. Nullam ut libero non
+                            lectus
+                            fermentum congue.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bg">
+        <div class="container col-xxl-12 px-4 py-5">
+            <div class="row flex-lg-row align-items-start g-5 py-5">
+                <div class="col-lg-3 col-sm-8">
+                    <h2>JustRype</h2>
+                    <div class="row py-4">
+                        <div class="col-lg-4 d-flex justify-content-between">
+                            <a href=""><img
+                                    src="/assets/5282541_fb_social media_facebook_facebook logo_social network_icon.svg"
+                                    width="24" alt="fb"></a>
+                            <a href=""><img
+                                    src="/assets/5282544_camera_instagram_social media_social network_instagram logo_icon.svg"
+                                    width="24" alt="fb"></a>
+                            <a href=""><img src="/assets/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                                    width="24" alt="fb"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-sm-8">
+                    <ul class="list-group list-unstyled">
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-8">
+                    <ul class="list-group list-unstyled">
+                        <li>Support</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-8">
+                    <ul class="list-group list-unstyled gap-4">
+                        <li>
+                            <a href=""><img src="/assets/apple-app-store-en-US.svg" width="125" alt="apple"
+                                    class="align-self-center"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/assets/google-play-badge-en-US.svg" width="125" alt="apple"
+                                    class="align-self-center"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+
+</html>

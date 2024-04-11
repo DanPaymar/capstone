@@ -1,10 +1,13 @@
 html,
 body {
-  height: 100%;
+  height: 100vh;
+  background-image: url('https://www.goodnet.org/photos/620x0/29079_hd.jpg');
+  background-size: cover;
 }
 
+
 .form-signin {
-  max-width: 330px;
+  max-width: 430px;
   padding: 1rem;
 }
 

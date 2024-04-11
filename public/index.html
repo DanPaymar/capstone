@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!-- copy and move this file to public folder when deploying site -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- copy and move this file to public folder when deploying site -->
 </head>
 
 <body>
@@ -28,15 +29,15 @@
                 </ul>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-secondary me-2">Login</button>
-                    <button type="button" class="btn btn-theme-primary">Sign up</button>
+                    <a href="login.html"><button class="btn btn-outline-theme-primary me-2">Login</button></a>
+                    <!-- <button type="button" class="btn btn-theme-primary">Sign up</button> -->
                 </div>
             </div>
         </div>
     </header>
     <main>
         <section>
-            <div class="">
+            <div>
                 <div class="jumbotron jumbotron-fluid text-center bg-body-tertiary c-bg position-relative">
                     <div class="container py-5 top-50 position-absolute start-50 translate-middle">
                         <div class="container module-1">
@@ -44,8 +45,11 @@
                             <div class="container col-6 justify-content-center">
                                 <form class="col-12 col-lg-auto py-3">
                                     <div class="input-group">
-                                        <span class="input-group-text input-group-addon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                        <input type="search" class="form-control form-control-dark text-bg-light py-4 custon-search" placeholder="Search home grown in your community" aria-label="Search">
+                                        <span class="input-group-text input-group-addon"><i
+                                                class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="search"
+                                            class="form-control form-control-dark text-bg-light py-4 custon-search"
+                                            placeholder="Search home grown in your community" aria-label="Search">
                                     </div>
                                 </form>
                             </div>
@@ -56,7 +60,8 @@
         </section>
         <section>
             <div class="container my-5 py-5">
-                <div class="position-relative p-5 text-start text-muted bg-body border rounded-5 overlay-wrapper c-bg-2 shadow-sm">
+                <div
+                    class="position-relative p-5 text-start text-muted bg-body border rounded-5 overlay-wrapper c-bg-2 shadow-sm">
                     <!-- Wrapper div for the overlay -->
                     <div class="position-absolute top-50 translate-middle-y">
                         <div class="text-start overlay-content">
@@ -79,7 +84,8 @@
             <div class="container col-xxl-8 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-8 col-sm-8 col-lg-6">
-                        <img src="/assets/app.png" class="d-block mx-lg-auto img-fluid" alt="app-screen-map" width="700" height="500" loading="lazy">
+                        <img src="/assets/app.png" class="d-block mx-lg-auto img-fluid" alt="app-screen-map" width="700"
+                            height="500" loading="lazy">
                     </div>
                     <div class="col-lg-6 p-2">
                         <h1 class="display-5 fw-bold lh-1 mb-3">Get the most popular food sharing app.</h1>
@@ -97,60 +103,68 @@
             <div class="container col-xxl-12 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-8 col-sm-8 col-lg-6">
-                            <h1 class="display-6">Find local farms and farmstands near you.</h1>
-                            <p class="lead">Connect with your local farmers selling direct to consumer.</p>
+                        <h1 class="display-6">Find local farms and farmstands near you.</h1>
+                        <p class="lead">Connect with your local farmers selling direct to consumer.</p>
                     </div>
                     <div class="col-lg-6 col-sm-8 col-lg-6">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="card position-relative shadow-sm">
-                                        <img src="/assets/65bp-800.jpg"  alt="farmstand" class="card-image-top object-fit-cover rounded">
-                                        <div class="card-body position-absolute top-50 start-50 translate-middle">
-                                            <h5 class="card-title text-light">Petaluma</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="card position-relative shadow-sm">
-                                        <img src="/assets/farmstand.jpg"  alt="farmstand" class="card-image-top object-fit-cover rounded">
-                                        <div class="card-body position-absolute top-50 start-50 translate-middle">
-                                            <h5 class="card-title text-light">Bodega</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="card position-relative shadow-sm">
-                                        <img src="/assets/25244916.jpg" alt="farmstand" class="card-image-top object-fit-cover rounded">
-                                        <div class="card-body position-absolute top-50 start-50 translate-middle">
-                                            <h5 class="card-title text-light">Tomales</h5>
-                                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="card position-relative shadow-sm">
+                                    <img src="/assets/65bp-800.jpg" alt="farmstand"
+                                        class="card-image-top object-fit-cover rounded">
+                                    <div class="card-body position-absolute top-50 start-50 translate-middle">
+                                        <h5 class="card-title text-light">Petaluma</h5>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-4">
+                                <div class="card position-relative shadow-sm">
+                                    <img src="/assets/farmstand.jpg" alt="farmstand"
+                                        class="card-image-top object-fit-cover rounded">
+                                    <div class="card-body position-absolute top-50 start-50 translate-middle">
+                                        <h5 class="card-title text-light">Bodega</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card position-relative shadow-sm">
+                                    <img src="/assets/25244916.jpg" alt="farmstand"
+                                        class="card-image-top object-fit-cover rounded">
+                                    <div class="card-body position-absolute top-50 start-50 translate-middle">
+                                        <h5 class="card-title text-light">Tomales</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-           
+
         </section>
 
 
     </main>
-    <footer>
+    <footer class="footer-bg">
         <div class="container col-xxl-12 px-4 py-5">
             <div class="row flex-lg-row align-items-start g-5 py-5">
                 <div class="col-lg-3 col-sm-8">
                     <h2>JustRype</h2>
                     <div class="row py-4">
                         <div class="col-lg-4 d-flex justify-content-between">
-                            <a href=""><img src="/assets/5282541_fb_social media_facebook_facebook logo_social network_icon.svg" width="24" alt="fb"></a>
-                            <a href=""><img src="/assets/5282544_camera_instagram_social media_social network_instagram logo_icon.svg" width="24" alt="fb"></a>
-                            <a href=""><img src="/assets/5282542_linkedin_network_social network_linkedin logo_icon.svg" width="24" alt="fb"></a>
+                            <a href=""><img
+                                    src="/assets/5282541_fb_social media_facebook_facebook logo_social network_icon.svg"
+                                    width="24" alt="fb"></a>
+                            <a href=""><img
+                                    src="/assets/5282544_camera_instagram_social media_social network_instagram logo_icon.svg"
+                                    width="24" alt="fb"></a>
+                            <a href=""><img src="/assets/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                                    width="24" alt="fb"></a>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
                 <div class="col-lg-3 col-sm-8">
                     <ul class="list-group list-unstyled">
@@ -168,16 +182,18 @@
                 </div>
                 <div class="col-lg-3 col-sm-8">
                     <ul class="list-group list-unstyled gap-4">
-                        <li>  
-                            <a href=""><img src="/assets/apple-app-store-en-US.svg" width="125" alt="apple" class="align-self-center"></a> 
+                        <li>
+                            <a href=""><img src="/assets/apple-app-store-en-US.svg" width="125" alt="apple"
+                                    class="align-self-center"></a>
                         </li>
                         <li>
-                            <a href=""><img src="/assets/google-play-badge-en-US.svg" width="125" alt="apple" class="align-self-center"></a> 
+                            <a href=""><img src="/assets/google-play-badge-en-US.svg" width="125" alt="apple"
+                                    class="align-self-center"></a>
                         </li>
                     </ul>
                 </div>
             </div>
-        
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
