@@ -1,10 +1,14 @@
 html,
 body {
+  height: 100%;
+
+}
+
+.login-bg {
   height: 100vh;
   background-image: url('https://www.goodnet.org/photos/620x0/29079_hd.jpg');
   background-size: cover;
 }
-
 
 .form-signin {
   max-width: 430px;
@@ -25,4 +29,8 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+fb-login-button {
+  width: 100%;
 }
