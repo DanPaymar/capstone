@@ -1,10 +1,11 @@
 'use strict';
 
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-// const { SERVER_PORT } = process.env
-const PORT = 4004
+const { SERVER_PORT } = process.env
+// const PORT = 4004
 
 const app = express();
 
@@ -21,5 +22,5 @@ app.get('/', (req, res) => {
 
 
 // Start the server
-app.listen(PORT, () => console.log(`trainspotting on ${PORT}`))
+app.listen(SERVER_PORT, () => console.log(`trainspotting on ${SERVER_PORT}`))
 
