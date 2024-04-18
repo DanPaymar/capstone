@@ -7,7 +7,7 @@ const cors = require('cors');
 const path = require('path');
 const { SERVER_PORT, SESSION_SECRET } = process.env
 
-const { signUp, userAccount, logIn, sessionCheck, logOut, createProfile } = require('./controller.js');
+const { signUp, logIn, sessionCheck, logOut, editProfile, getProfile } = require('./controller.js');
 
 const app = express();
 
@@ -38,8 +38,8 @@ app.post('/signup', signUp);
 app.post('/login', logIn);
 
 // update user account info
-app.put('/profile', userAccount);
-app.get('/profile', createProfile);
+app.put('/profile', editProfile);
+app.get('/profile', getProfile);
 // 
 app.get('/sessionCheck', sessionCheck);
 

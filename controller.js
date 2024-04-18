@@ -37,7 +37,7 @@ module.exports = {
             })
             .catch(err => console.log(err))
     },
-    userAccount: (req, res) => {
+    editProfile: (req, res) => {
         const { name, city } = req.body
         const { id } = req.session.user
         sequelize.query(`
@@ -88,15 +88,20 @@ module.exports = {
             res.redirect('/');
         });
     },
-    createProfile: (req, res) => {
+    getProfile: (req, res) => {
+
         if (req.session.user) {
             sequelize.query(`
-            SELECT * FROM account
+            SELECT name, city, email FROM account
+            where id = ${req.session.user.id} 
             `)
                 .then((dbRes) => {
-                    res.status(200).send()
+                    res.status(200).send(dbRes[0][0])
                 })
+                .catch(err => console.log(err));
 
+        } else {
+            res.status(400).send({ message: 'nothing happened' })
         }
     }
 
