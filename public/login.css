@@ -5,7 +5,7 @@ body {
 }
 
 .login-bg {
-  height: 100vh;
+  height: 100%;
   background-image: url('https://www.goodnet.org/photos/620x0/29079_hd.jpg');
   background-size: cover;
 }

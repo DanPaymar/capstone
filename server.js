@@ -2,10 +2,12 @@
 
 require('dotenv').config()
 const express = require('express');
+const session = require('express-session');
 const cors = require('cors');
 const path = require('path');
-const { SERVER_PORT } = process.env
-// const PORT = 4004
+const { SERVER_PORT, SESSION_SECRET } = process.env
+
+const { signUp, userAccount, logIn, sessionCheck, logOut, createProfile } = require('./controller.js');
 
 const app = express();
 
@@ -14,6 +16,13 @@ app.use(express.static(path.join(__dirname, '/public')))
 app.use(express.json());
 app.use(cors());
 
+app.use(session({
+    secret: SESSION_SECRET,
+    cookie: { maxAge: (1000 * 60 * 60 * 24 * 7), sameSite: true },
+    resave: true,
+    saveUninitialized: true
+}));
+
 // Define a route to serve the website
 app.get('/', (req, res) => {
     // send the main index html file
@@ -21,6 +30,21 @@ app.get('/', (req, res) => {
 });
 
 
+
+// signup form requests
+app.post('/signup', signUp);
+
+// login form requests
+app.post('/login', logIn);
+
+// update user account info
+app.put('/profile', userAccount);
+app.get('/profile', createProfile);
+// 
+app.get('/sessionCheck', sessionCheck);
+
+app.get('/logout', logOut);
+
 // Start the server
-app.listen(SERVER_PORT, () => console.log(`trainspotting on ${SERVER_PORT}`))
+app.listen(SERVER_PORT, () => console.log(`trainspotting on ${SERVER_PORT}`));
 
