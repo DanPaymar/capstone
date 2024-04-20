@@ -54,7 +54,6 @@ module.exports = {
     },
     logIn: (req, res) => {
         const { email, password } = req.body
-
         // sequelize query to find user
         sequelize.query(`
                 SELECT * FROM account
@@ -64,7 +63,7 @@ module.exports = {
                 let user = dbRes[0][0]
                 console.log(user)
                 let passCheck = bcrypt.compareSync(password, user.password)
-
+                // validate users email and password is entered correct
                 if (user.email === email && passCheck) {
                     req.session.user = user
                     return res.status(200).send({ message: 'user logged in' })
@@ -89,7 +88,6 @@ module.exports = {
         });
     },
     getProfile: (req, res) => {
-
         if (req.session.user) {
             sequelize.query(`
             SELECT name, city, email FROM account

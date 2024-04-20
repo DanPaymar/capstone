@@ -40,7 +40,8 @@ app.post('/login', logIn);
 // update user account info
 app.put('/profile', editProfile);
 app.get('/profile', getProfile);
-// 
+
+// user session 
 app.get('/sessionCheck', sessionCheck);
 
 app.get('/logout', logOut);
